@@ -20,7 +20,7 @@ class WeatherView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Set up View
+    // MARK: Helpers
     private func setupView() {
         
     }

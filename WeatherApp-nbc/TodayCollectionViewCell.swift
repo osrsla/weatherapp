@@ -11,37 +11,37 @@ import UIKit
 class TodayCollectionViewCell: UICollectionViewCell {
     static let identifier = "todayCollectionViewCell"
     
-//    var time: String = ""
-//    var icon: String = ""
-//    var temp: String = ""
+    var labelSize: CGFloat = 14
+    var stackViewSpacing: CGFloat = 2
     
-    let timeLabel: UILabel = {
+    // MARK: - Properties
+    lazy var timeLabel: UILabel = {
         let label = UILabel()
         
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: labelSize)
         
         return label
     }()
     
-    let iconLabel: UILabel = {
+    lazy var iconLabel: UILabel = {
         let label = UILabel()
         
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: labelSize)
         
         return label
     }()
     
-    let tempLabel: UILabel = {
+    lazy var tempLabel: UILabel = {
         let label = UILabel()
 
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: labelSize)
         
         return label
     }()
     
     lazy var weatherStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [timeLabel, iconLabel, tempLabel])
-        stackView.spacing = 2
+        stackView.spacing = stackViewSpacing
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.alignment = .fill
@@ -50,9 +50,11 @@ class TodayCollectionViewCell: UICollectionViewCell {
         return stackView
     }()
     
+    // MARK: Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        setUI()
+        setConstraint()
         
     }
     
