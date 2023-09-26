@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		30F74C852AC13AE4002BF83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F74C842AC13AE4002BF83E /* AppDelegate.swift */; };
-		30F74C892AC13AE4002BF83E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F74C882AC13AE4002BF83E /* ViewController.swift */; };
 		30F74C8E2AC13AE5002BF83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F74C8D2AC13AE5002BF83E /* Assets.xcassets */; };
 		30F74C912AC13AE5002BF83E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F74C8F2AC13AE5002BF83E /* LaunchScreen.storyboard */; };
 		EB6923F92AC170C90027143D /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6923F82AC170C90027143D /* WeatherView.swift */; };
@@ -17,15 +16,11 @@
 		EB6923FF2AC179D50027143D /* TodayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6923FE2AC179D50027143D /* TodayCollectionViewCell.swift */; };
 		EB6924012AC17A090027143D /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6924002AC17A090027143D /* DayCollectionViewCell.swift */; };
 		EB6924032AC2830A0027143D /* DateScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6924022AC2830A0027143D /* DateScrollView.swift */; };
-		EB6924062AC29CDF0027143D /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6924052AC29CDF0027143D /* BaseScrollView.swift */; };
-		EB6924082AC29CED0027143D /* HoriozntalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6924072AC29CED0027143D /* HoriozntalScrollView.swift */; };
-		EB69240A2AC29CFB0027143D /* SomeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6924092AC29CFB0027143D /* SomeDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30F74C812AC13AE4002BF83E /* WeatherApp-nbc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeatherApp-nbc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F74C842AC13AE4002BF83E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30F74C882AC13AE4002BF83E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30F74C8D2AC13AE5002BF83E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30F74C902AC13AE5002BF83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30F74C922AC13AE5002BF83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,9 +30,6 @@
 		EB6923FE2AC179D50027143D /* TodayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCollectionViewCell.swift; sourceTree = "<group>"; };
 		EB6924002AC17A090027143D /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
 		EB6924022AC2830A0027143D /* DateScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScrollView.swift; sourceTree = "<group>"; };
-		EB6924052AC29CDF0027143D /* BaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
-		EB6924072AC29CED0027143D /* HoriozntalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoriozntalScrollView.swift; sourceTree = "<group>"; };
-		EB6924092AC29CFB0027143D /* SomeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,30 +62,58 @@
 		30F74C832AC13AE4002BF83E /* WeatherApp-nbc */ = {
 			isa = PBXGroup;
 			children = (
-				EB6924042AC29CBF0027143D /* HorizontalScrollView */,
-				30F74C842AC13AE4002BF83E /* AppDelegate.swift */,
-				30F74C882AC13AE4002BF83E /* ViewController.swift */,
+				EB69240F2AC2AEAA0027143D /* ViewControllers */,
+				EB69240E2AC2AE8E0027143D /* Views */,
+				EB69240D2AC2AE800027143D /* ViewModels */,
+				EB69240B2AC2AE2D0027143D /* Helpers */,
 				30F74C8D2AC13AE5002BF83E /* Assets.xcassets */,
 				30F74C8F2AC13AE5002BF83E /* LaunchScreen.storyboard */,
 				30F74C922AC13AE5002BF83E /* Info.plist */,
-				EB6923F82AC170C90027143D /* WeatherView.swift */,
-				EB6923FA2AC170F00027143D /* WeatherViewModel.swift */,
-				EB6923FC2AC170FF0027143D /* WeatherViewController.swift */,
-				EB6923FE2AC179D50027143D /* TodayCollectionViewCell.swift */,
-				EB6924002AC17A090027143D /* DayCollectionViewCell.swift */,
-				EB6924022AC2830A0027143D /* DateScrollView.swift */,
 			);
 			path = "WeatherApp-nbc";
 			sourceTree = "<group>";
 		};
-		EB6924042AC29CBF0027143D /* HorizontalScrollView */ = {
+		EB69240B2AC2AE2D0027143D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				EB6924052AC29CDF0027143D /* BaseScrollView.swift */,
-				EB6924072AC29CED0027143D /* HoriozntalScrollView.swift */,
-				EB6924092AC29CFB0027143D /* SomeDataModel.swift */,
+				30F74C842AC13AE4002BF83E /* AppDelegate.swift */,
 			);
-			path = HorizontalScrollView;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EB69240D2AC2AE800027143D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EB6923FA2AC170F00027143D /* WeatherViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EB69240E2AC2AE8E0027143D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB6924112AC2AEF30027143D /* Cells */,
+				EB6924022AC2830A0027143D /* DateScrollView.swift */,
+				EB6923F82AC170C90027143D /* WeatherView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB69240F2AC2AEAA0027143D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB6923FC2AC170FF0027143D /* WeatherViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EB6924112AC2AEF30027143D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EB6923FE2AC179D50027143D /* TodayCollectionViewCell.swift */,
+				EB6924002AC17A090027143D /* DayCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,14 +189,10 @@
 				EB6923FF2AC179D50027143D /* TodayCollectionViewCell.swift in Sources */,
 				EB6923F92AC170C90027143D /* WeatherView.swift in Sources */,
 				EB6923FD2AC170FF0027143D /* WeatherViewController.swift in Sources */,
-				EB6924082AC29CED0027143D /* HoriozntalScrollView.swift in Sources */,
 				EB6923FB2AC170F00027143D /* WeatherViewModel.swift in Sources */,
 				EB6924012AC17A090027143D /* DayCollectionViewCell.swift in Sources */,
-				30F74C892AC13AE4002BF83E /* ViewController.swift in Sources */,
-				EB6924062AC29CDF0027143D /* BaseScrollView.swift in Sources */,
 				30F74C852AC13AE4002BF83E /* AppDelegate.swift in Sources */,
 				EB6924032AC2830A0027143D /* DateScrollView.swift in Sources */,
-				EB69240A2AC29CFB0027143D /* SomeDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +337,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,6 +364,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
