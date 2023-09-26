@@ -16,6 +16,10 @@
 		EB6923FD2AC170FF0027143D /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6923FC2AC170FF0027143D /* WeatherViewController.swift */; };
 		EB6923FF2AC179D50027143D /* TodayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6923FE2AC179D50027143D /* TodayCollectionViewCell.swift */; };
 		EB6924012AC17A090027143D /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6924002AC17A090027143D /* DayCollectionViewCell.swift */; };
+		EB6924032AC2830A0027143D /* DateScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6924022AC2830A0027143D /* DateScrollView.swift */; };
+		EB6924062AC29CDF0027143D /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6924052AC29CDF0027143D /* BaseScrollView.swift */; };
+		EB6924082AC29CED0027143D /* HoriozntalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6924072AC29CED0027143D /* HoriozntalScrollView.swift */; };
+		EB69240A2AC29CFB0027143D /* SomeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6924092AC29CFB0027143D /* SomeDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		EB6923FC2AC170FF0027143D /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		EB6923FE2AC179D50027143D /* TodayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCollectionViewCell.swift; sourceTree = "<group>"; };
 		EB6924002AC17A090027143D /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB6924022AC2830A0027143D /* DateScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScrollView.swift; sourceTree = "<group>"; };
+		EB6924052AC29CDF0027143D /* BaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
+		EB6924072AC29CED0027143D /* HoriozntalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoriozntalScrollView.swift; sourceTree = "<group>"; };
+		EB6924092AC29CFB0027143D /* SomeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 		30F74C832AC13AE4002BF83E /* WeatherApp-nbc */ = {
 			isa = PBXGroup;
 			children = (
+				EB6924042AC29CBF0027143D /* HorizontalScrollView */,
 				30F74C842AC13AE4002BF83E /* AppDelegate.swift */,
 				30F74C882AC13AE4002BF83E /* ViewController.swift */,
 				30F74C8D2AC13AE5002BF83E /* Assets.xcassets */,
@@ -72,8 +81,19 @@
 				EB6923FC2AC170FF0027143D /* WeatherViewController.swift */,
 				EB6923FE2AC179D50027143D /* TodayCollectionViewCell.swift */,
 				EB6924002AC17A090027143D /* DayCollectionViewCell.swift */,
+				EB6924022AC2830A0027143D /* DateScrollView.swift */,
 			);
 			path = "WeatherApp-nbc";
+			sourceTree = "<group>";
+		};
+		EB6924042AC29CBF0027143D /* HorizontalScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				EB6924052AC29CDF0027143D /* BaseScrollView.swift */,
+				EB6924072AC29CED0027143D /* HoriozntalScrollView.swift */,
+				EB6924092AC29CFB0027143D /* SomeDataModel.swift */,
+			);
+			path = HorizontalScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +169,14 @@
 				EB6923FF2AC179D50027143D /* TodayCollectionViewCell.swift in Sources */,
 				EB6923F92AC170C90027143D /* WeatherView.swift in Sources */,
 				EB6923FD2AC170FF0027143D /* WeatherViewController.swift in Sources */,
+				EB6924082AC29CED0027143D /* HoriozntalScrollView.swift in Sources */,
 				EB6923FB2AC170F00027143D /* WeatherViewModel.swift in Sources */,
 				EB6924012AC17A090027143D /* DayCollectionViewCell.swift in Sources */,
 				30F74C892AC13AE4002BF83E /* ViewController.swift in Sources */,
+				EB6924062AC29CDF0027143D /* BaseScrollView.swift in Sources */,
 				30F74C852AC13AE4002BF83E /* AppDelegate.swift in Sources */,
+				EB6924032AC2830A0027143D /* DateScrollView.swift in Sources */,
+				EB69240A2AC29CFB0027143D /* SomeDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
